@@ -10,3 +10,4 @@ new CdkPipelineEksStack(app, 'CdkPipelineEksStack', {
     region: 'ap-northeast-2',
   }
 });
+app.synth();
