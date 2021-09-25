@@ -12,7 +12,7 @@ export class CdkPipelineEksStack extends cdk.Stack {
       pipelineName:'CdkPipelineEks',
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('blackdog0403/cdk-pipeline-eks', 'master'),
-        commands: [ 'aws sts get-caller-identity| tee', 'npm ci', 'npm run build', 'npx cdk synth',]
+        commands: [ 'aws sts get-caller-identity | tee', 'npm ci', 'npm run build', 'npx cdk synth',]
       })
     });
 
